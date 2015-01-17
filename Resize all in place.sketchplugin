@@ -1,0 +1,28 @@
+// Scale all selected objects, in place, from center.
+
+if ([selection count] > 0) { // TODO: Make sure it's a layer.
+  var scalePercentage = [doc askForUserInput:"Scale (percentage):" initialValue:"0"];
+  for (var i = 0; i < selection.count(); i++) {
+    scale(selection[i], scalePercentage);
+  }
+} else {
+  [doc showMessage:"Please make sure you at least one layer selected."];
+}
+
+function scale(selection, scalePercentage) {
+  scaleDecimal = scalePercentage / 100;
+  var layer = selection,
+    frame = [layer frame],
+    oldWidth = [frame width],
+    oldHeight = [frame height],
+    oldXPos = [frame x],
+    oldYPos = [frame y],
+    newWidth = Math.round(oldWidth * scaleDecimal),
+    newHeight = Math.round(oldHeight * scaleDecimal),
+    newXPos = Math.round(oldXPos - ((newWidth - oldWidth) / 2)),
+    newYPos = Math.round(oldYPos - ((newHeight - oldHeight) / 2));
+  [frame setWidth: newWidth];
+  [frame setHeight: newHeight];
+  [frame setX: newXPos];
+  [frame setY: newYPos];
+}
