@@ -2,7 +2,7 @@
 //
 // Resize all selected shapes or layers, in place, from center.
 //
-// © 2013–2015 Delighted Inc.
+// Copyright (c) 2015 Mike Gowen, Delighted Inc.
 
 var hasValidSelectionCount = hasValidSelectionCount(selection, 2);
 // TODO: Avoid calling if not the required selection count.
