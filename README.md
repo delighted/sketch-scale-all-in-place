@@ -11,7 +11,7 @@ Sketch plugin to resize all selected layers, in place, from center.
 
 1. [Download the latest release](https://github.com/mikegowen/sketch-resize-all-in-place/releases/latest) and unzip it.
 2. In Sketch, navigate to "Plugins > Reveal Plugins Folder".
-3. Move "Resize all in place.sketchplugin" to the Plugins folder.
+3. Move "Resize all in place.sketchplugin" to the "Plugins" folder.
 
 ## Usage
 
