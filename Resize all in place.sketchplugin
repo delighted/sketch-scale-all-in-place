@@ -12,8 +12,12 @@ var hasValidSelection = hasValidSelection(selection, validSelectionTypes);
 if (hasValidSelectionCount && hasValidSelection) {
   var scalePercentage = [doc askForUserInput:"Scale by (percentage):" initialValue:"0"];
 
-  for (var i = 0; i < [selection count]; i++) {
-    scale(selection[i], scalePercentage);
+  if (scalePercentage > 0) {
+    for (var i = 0; i < [selection count]; i++) {
+      scale(selection[i], scalePercentage);
+    }
+  } else {
+    [doc showMessage:"Please enter a positive percentage."];
   }
 }
 
