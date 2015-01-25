@@ -1,15 +1,15 @@
-Sketch plugin: Resize all in place
+Sketch plugin: Scale all in place
 =================
 
-Sketch plugin to resize all selected layers, in place, from center.
+Sketch plugin to scale all selected layers, in place, from center.
 
 ## Demo
 
-![](https://dl.dropboxusercontent.com/u/159452/Github%20readme%20demos%20%5BDO%20NOT%20DELETE%5D/resize-all-in-place.gif)
+![](https://dl.dropboxusercontent.com/u/159452/Github%20readme%20demos%20%5BDO%20NOT%20DELETE%5D/scale-all-in-place.gif)
 
 ## Installation
 
-1. [Download the latest release](https://github.com/mikegowen/sketch-resize-all-in-place/releases/latest) and unzip it.
+1. [Download the latest release](https://github.com/mikegowen/sketch-scale-all-in-place/releases/latest) and unzip it.
 2. In Sketch, navigate to "Plugins > Reveal Plugins Folder".
 3. Move "Resize all in place.sketchplugin" to the "Plugins" folder.
 
