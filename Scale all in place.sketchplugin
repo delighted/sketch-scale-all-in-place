@@ -1,6 +1,6 @@
-// Resize all in place
+// Scale all in place
 //
-// Resize all selected shapes or layers, in place, from center.
+// Scale all selected shapes or layers, in place, from center.
 //
 // Copyright (c) 2015 Mike Gowen, Delighted Inc.
 
