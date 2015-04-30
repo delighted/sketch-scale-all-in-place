@@ -4,25 +4,25 @@
 //
 // Copyright (c) 2015 Mike Gowen, Delighted Inc.
 
-var hasValidSelectionCount = hasValidSelectionCount(selection, 2);
+var hasValidSelectionCount = hasValidSelectionCount(selection, 2)
 // TODO: Avoid calling if not the required selection count.
-var validSelectionTypes = [NSArray arrayWithObjects:[MSShapeGroup class], [MSLayerGroup class]];
-var hasValidSelection = hasValidSelection(selection, validSelectionTypes);
+var validSelectionTypes = [NSArray arrayWithObjects:[MSShapeGroup class], [MSLayerGroup class]]
+var hasValidSelection = hasValidSelection(selection, validSelectionTypes)
 
 if (hasValidSelectionCount && hasValidSelection) {
-  var scalePercentage = [doc askForUserInput:"Scale by (percentage):" initialValue:"0"];
+  var scalePercentage = [doc askForUserInput:"Scale by (percentage):" initialValue:"0"]
 
   if (scalePercentage > 0) {
-    for (var i = 0; i < [selection count]; i++) {
-      scale(selection[i], scalePercentage);
+    for (var i = 0 i < [selection count] i++) {
+      scale(selection[i], scalePercentage)
     }
   } else {
-    [doc showMessage:"Please enter a positive percentage."];
+    [doc showMessage:"Please enter a positive percentage."]
   }
 }
 
 function scale(selection, scalePercentage) {
-  var scaleDecimal = scalePercentage / 100;
+  var scaleDecimal = scalePercentage / 100
   var layer = selection,
     frame = [layer frame],
     oldWidth = [frame width],
@@ -32,34 +32,34 @@ function scale(selection, scalePercentage) {
     newWidth = Math.round(oldWidth * scaleDecimal),
     newHeight = Math.round(oldHeight * scaleDecimal),
     newXPos = Math.round(oldXPos - ((newWidth - oldWidth) / 2)),
-    newYPos = Math.round(oldYPos - ((newHeight - oldHeight) / 2));
-  [frame setWidth: newWidth];
-  [frame setHeight: newHeight];
-  [frame setX: newXPos];
-  [frame setY: newYPos];
+    newYPos = Math.round(oldYPos - ((newHeight - oldHeight) / 2))
+  [frame setWidth: newWidth]
+  [frame setHeight: newHeight]
+  [frame setX: newXPos]
+  [frame setY: newYPos]
 }
 
 function hasValidSelectionCount(selection, minSelectionCount) {
   if ([selection count] >= minSelectionCount) {
-    return true;
+    return true
   } else {
-    var errorMsg = "Please make sure at least " + minSelectionCount + " shapes or layers are selected.";
-    [doc showMessage:errorMsg];
-    return false;
+    var errorMsg = "Please make sure at least " + minSelectionCount + " shapes or layers are selected."
+    [doc showMessage:errorMsg]
+    return false
   }
 }
 
 function hasValidSelection(selection, validSelectionTypes) {
-  var hasValidSelection = true;
-  var loop = [selection objectEnumerator];
+  var hasValidSelection = true
+  var loop = [selection objectEnumerator]
 
   while (selectionItem = [loop nextObject]) {
     if (hasValidSelection) {
       if (![validSelectionTypes containsObject:[selectionItem class]]) {
-        hasValidSelection = false;
-        [doc showMessage:"Please make sure you have ONLY shapes or layers selected."];
+        hasValidSelection = false
+        [doc showMessage:"Please make sure you have ONLY shapes or layers selected."]
       }
     }
   }
-  return hasValidSelection;
+  return hasValidSelection
 }
