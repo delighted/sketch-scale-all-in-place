@@ -10,7 +10,7 @@ var validSelectionTypes = [NSArray arrayWithObjects:[MSShapeGroup class], [MSLay
 var hasValidSelection = hasValidSelection(selection, validSelectionTypes)
 
 if (hasValidSelectionCount && hasValidSelection) {
-  var scalePercentage = [doc askForUserInput:"Scale by (percentage):" initialValue:"0"]
+  var scalePercentage = [doc askForUserInput:"Scale to (percentage):" initialValue:"100"]
 
   if (scalePercentage > 0) {
     for (var i = 0; i < [selection count]; i++) {
