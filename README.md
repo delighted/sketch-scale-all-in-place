@@ -9,7 +9,7 @@ Sketch plugin to scale all selected layers, in place, from center.
 
 ## Installation
 
-1. [Download the latest release](https://github.com/mikegowen/sketch-scale-all-in-place/releases/latest) and unzip it.
+1. [Download the latest release](https://github.com/delighted/sketch-scale-all-in-place/releases/latest) and unzip it.
 2. In Sketch, navigate to "Plugins > Reveal Plugins Folder".
 3. Move "Scale all in place.sketchplugin" to the "Plugins" folder.
 
