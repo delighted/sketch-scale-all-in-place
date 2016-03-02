@@ -1,0 +1,23 @@
+{
+  "author" : "Mike Gowen",
+  "commands" : [
+    {
+      "script" : "Scale all in place.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Scale all in place",
+      "identifier" : "scale-all-in-place"
+    }
+  ],
+  "menu" : {
+    "isRoot" : true,
+    "items" : [
+      "scale-all-in-place"
+    ]
+  },
+  "identifier" : "com.delighted.scale-all-in-place",
+  "version" : "2.0.0",
+  "description" : "Sketch plugin to scale all selected layers, in place, from center.",
+  "authorEmail" : "mike@delighted.com",
+  "name" : "Scale all in place"
+}
