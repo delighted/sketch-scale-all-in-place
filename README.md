@@ -5,7 +5,7 @@ Sketch plugin to scale all selected layers, in place, from center.
 
 ## Demo
 
-![](https://dl.dropboxusercontent.com/u/159452/Github%20readme%20demos%20%5BDO%20NOT%20DELETE%5D/scale-all-in-place.gif)
+![](scale-all-in-place.gif)
 
 ## Installation
 
