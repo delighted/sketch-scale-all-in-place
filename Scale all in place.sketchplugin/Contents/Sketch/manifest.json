@@ -1,5 +1,6 @@
 {
   "author" : "Mike Gowen",
+  "appcast": "https://raw.githubusercontent.com/delighted/scale-all-in-place/master/scale-all-in-place-appcast.xml",
   "commands" : [
     {
       "script" : "Scale all in place.cocoascript",

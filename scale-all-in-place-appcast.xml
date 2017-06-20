@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Scale all in place</title>
+    <link>http://sparkle-project.org/files/sparkletestcast.xml</link>
+    <description>Sketch plugin to scale all selected layers, in place, from center.</description>
+    <language>en</language>
+      <item>
+        <title>Version 1.0.0</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Major update v1.0.0</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v1.0.0.zip" sparkle:version="1.0.0" />
+      </item>
+      <item>
+        <title>Version 1.0.1</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Minor update v1.0.1</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v1.0.1.zip" sparkle:version="1.0.1" />
+      </item>
+      <item>
+        <title>Version 1.0.2</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Minor update v1.0.2</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v1.0.2.zip" sparkle:version="1.0.2" />
+      </item>
+      <item>
+        <title>Version 2.0.0</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Major update v2.0.0</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v2.0.0.zip" sparkle:version="2.0.0" />
+      </item>
+  </channel>
+</rss>
