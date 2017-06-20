@@ -49,5 +49,16 @@
         </description>
         <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v2.0.0.zip" sparkle:version="2.0.0" />
       </item>
+      <item>
+        <title>Version 2.0.1</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Major update v2.0.1</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://github.com/delighted/sketch-scale-all-in-place/archive/v2.0.1.zip" sparkle:version="2.0.1" />
+      </item>
   </channel>
 </rss>
