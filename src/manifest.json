@@ -1,0 +1,24 @@
+{
+  "name": "Scale all in place",
+  "description": "Sketch plugin to scale all selected layers, in place, from center.",
+  "author": "Mike Gowen",
+  "authorEmail" : "mike@delighted.com",
+  "homepage": "https://github.com/delighted/sketch-scale-all-in-place",
+  "version": "3.0.0",
+  "identifier": "com.delighted.scale-all-in-place",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands" : [
+    {
+      "script" : "./sketch-scale-all-in-place.js",
+      "name" : "Scale all in place",
+      "identifier" : "scale-all-in-place"
+    }
+  ],
+  "menu" : {
+    "isRoot" : true,
+    "items" : [
+      "scale-all-in-place"
+    ]
+  }
+}
