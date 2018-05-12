@@ -1,0 +1,13 @@
+# build artifacts
+sketch-scale-all-in-place.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
