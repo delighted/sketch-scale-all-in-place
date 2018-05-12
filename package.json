@@ -19,7 +19,7 @@
   "devDependencies": {
     "@skpm/builder": "^0.5.2"
   },
-  "author": "Mike Gowen <mike@mikegowen.com>",
+  "author": "Mike Gowen <mike@delighted.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/delighted/sketch-scale-all-in-place"
