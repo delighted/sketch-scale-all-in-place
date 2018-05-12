@@ -13,7 +13,7 @@ export default function(context) {
   let selectedLayers = toArray(document.selectedLayers);
 
   if (!validSelection(selectedLayers)) {
-    sketch.UI.message("Please select 2 or more layers (text layers are not supported).");
+    sketch.UI.message("Please select 1 or more layers (text layers are not supported).");
     return false;
   }
 
@@ -39,7 +39,7 @@ function scale(layer, scalePercentage) {
 }
 
 function validSelection(selectedLayers) {
-  if (selectedLayers.length < 2) return false;
+  if (selectedLayers.length < 1) return false;
   if (hasTextSelected(selectedLayers)) return false;
   return true;
 }
