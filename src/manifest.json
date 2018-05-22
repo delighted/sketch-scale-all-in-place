@@ -4,7 +4,7 @@
   "author": "Mike Gowen",
   "authorEmail" : "mike@delighted.com",
   "homepage": "https://github.com/delighted/sketch-scale-all-in-place",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "identifier": "com.delighted.scale-all-in-place",
   "compatibleVersion": 3,
   "bundleVersion": 1,
