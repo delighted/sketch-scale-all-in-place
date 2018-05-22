@@ -1,7 +1,7 @@
 {
   "name": "sketch-scale-all-in-place",
   "description": "Sketch plugin to scale all selected layers, in place, from center.",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "engines": {
     "sketch": ">=3.0"
   },
